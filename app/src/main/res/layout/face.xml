@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/face_selection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/bombay_face"
+                    android:layout_width="359dp"
+                    android:layout_height="199dp"
+                    android:drawableBottom="@drawable/bombay_face" />
+
+                <RadioButton
+                    android:id="@+id/british_face"
+                    android:layout_width="355dp"
+                    android:layout_height="199dp"
+                    android:drawableBottom="@drawable/british_face" />
+
+                <RadioButton
+                    android:id="@+id/fars_face"
+                    android:layout_width="359dp"
+                    android:layout_height="202dp"
+                    android:drawableBottom="@drawable/fars_face" />
+
+                <RadioButton
+                    android:id="@+id/peterbald_face"
+                    android:layout_width="359dp"
+                    android:layout_height="218dp"
+                    android:drawableBottom="@drawable/peterbald_face" />
+
+                <RadioButton
+                    android:id="@+id/ragdoll_face"
+                    android:layout_width="359dp"
+                    android:layout_height="208dp"
+                    android:drawableBottom="@drawable/ragdoll_face" />
+
+                <RadioButton
+                    android:id="@+id/scottşsh_face"
+                    android:layout_width="381dp"
+                    android:layout_height="238dp"
+                    android:drawableBottom="@drawable/scottish_face" />
+
+                <RadioButton
+                    android:id="@+id/siyam_face"
+                    android:layout_width="372dp"
+                    android:layout_height="193dp"
+                    android:drawableBottom="@drawable/siyam_face" />
+
+                <RadioButton
+                    android:id="@+id/sphynx_face"
+                    android:layout_width="377dp"
+                    android:layout_height="177dp"
+                    android:drawableBottom="@drawable/sphynx_face" />
+
+                <RadioButton
+                    android:id="@+id/tekir_face"
+                    android:layout_width="377dp"
+                    android:layout_height="221dp"
+                    android:drawableBottom="@drawable/tekir_face" />
+
+                <RadioButton
+                    android:id="@+id/ankara_face"
+                    android:layout_width="386dp"
+                    android:layout_height="259dp"
+                    android:drawableBottom="@drawable/ankara__face" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/legs_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="legs"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.905"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/face_selection"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
